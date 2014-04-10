@@ -5,7 +5,7 @@
 	Author: Adrian Lambertz
 	Description: Wordpress Cycle Slideshow Plugin based on the popular Wordpress Plugin "Advanced Custom Field". Needs the ACF-Addon "Gallery Field". This plugin just provides the function. You have to output it by yourself!
 	Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
-	Version: 0.1.1
+	Version: 0.1.2
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
 	*/
 	
