@@ -11,7 +11,6 @@
 	
 	
 	/* 	CONFIGURATION */
-	$use_with_hook	 	=	false;
 	$hook_name			=	'genesis_before_entry_content';
 	$gallery_field_name	=	'start_slideshow';
 	$image_size_name	=	'start_slide';
