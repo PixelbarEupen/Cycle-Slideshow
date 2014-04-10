@@ -1,5 +1,9 @@
 ### Changelog for Cycle-Slideshow Plugin
 
+
+#### 0.1.3 (09/04/2014)
+
+* test
 #### 0.1.2 (09/04/2014)
 
 * Test release for pixelbar.be
