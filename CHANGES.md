@@ -1,6 +1,10 @@
 ### Changelog for Cycle-Slideshow Plugin
 
-#### 0.1.3 (09/04/2014)
+#### 0.1.5 (09/04/2014)
+
+* WP jQuery includes automatically
+
+#### 0.1.4 (09/04/2014)
 
 * Default image size is now "large"
 
