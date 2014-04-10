@@ -24,7 +24,7 @@
 	
 	//REGISTER NECESSARY FILES
 	function register_files(){
-		if(count(get_field('start_slideshow')) > 1 OR count(get_field('slider')) > 1):
+		if(count(get_field($gallery_field_name)) > 1):
 			wp_register_script( 'cycle', plugins_url( 'js/cycle.js' , __FILE__ ));
 			wp_enqueue_script( 'cycle' );
 		endif;
