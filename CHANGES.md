@@ -2,7 +2,7 @@
 
 #### 0.1.2 (09/04/2014)
 
-* Test release
+* Test release for pixelbar.be
 
 #### 0.1.1 (09/04/2014)
 
