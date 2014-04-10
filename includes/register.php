@@ -4,6 +4,8 @@
 	function register_files(){
 		global $gallery_field_name; 
 		
+		wp_enqueue_script('jquery');
+		
 		if(count(get_field($gallery_field_name)) > 1):
 			wp_register_script( 'cycle', plugins_url( '../js/cycle.js' , __FILE__ ));
 			wp_enqueue_script( 'cycle' );
