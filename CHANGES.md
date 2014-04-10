@@ -1,5 +1,9 @@
 ### Changelog for Cycle-Slideshow Plugin
 
+#### 0.1.2 (09/04/2014)
+
+* Test release
+
 #### 0.1.1 (09/04/2014)
 
 * Adding Cycle JS and basic CSS incl. Iconfont
