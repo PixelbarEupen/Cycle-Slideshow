@@ -1,5 +1,8 @@
 ### Changelog for Cycle-Slideshow Plugin
 
+#### 0.1.3 (09/04/2014)
+
+* Default image size is now "large"
 
 #### 0.1.3 (09/04/2014)
 
