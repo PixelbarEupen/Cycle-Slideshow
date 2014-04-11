@@ -1,5 +1,13 @@
 <?php 
 	
+	/*
+	
+		THIS FILE REGISTERS THE NECESSARY JS AND CSS FILES FOR USE WITH THIS PLUGIN.
+		ADDITIONALLY, IT ENQUEUES THE JQUERY PLUGIN, IF IT ISNT ALREADY
+	
+	*/
+	
+	
 	//REGISTER NECESSARY FILES
 	function register_files(){
 		global $gallery_field_name; 
