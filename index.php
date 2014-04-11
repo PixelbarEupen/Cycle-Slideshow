@@ -5,7 +5,7 @@
 	Author: Adrian Lambertz
 	Description: Wordpress Cycle Slideshow Plugin based on the popular Wordpress Plugin "Advanced Custom Field". Needs the ACF-Addon "Gallery Field". This plugin just provides the function. You have to output it by yourself!
 	Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
-	Version: 0.1.6.1
+	Version: 0.1.7
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
 	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
@@ -14,11 +14,11 @@
 	/* 	CONFIGURATION */
 	$hook_name			=	'genesis_before_entry_content';
 	$gallery_field_name	=	'start_slideshow';
-	$image_size_name	=	'large';
-	$test = false;
 	
-	
-	
+	$image_size_name 	= (get_option('cycle-image-size') == '') ? 'large' : get_option('cycle-image-size');
+	$animation			= (get_option('cycle-animation') == '') ? 'fade' : get_option('cycle-animation');
+	$timeout			= (get_option('cycle-timeout') == '') ? 0 : get_option('cycle-timeout');
+	$show_pager			= (get_option('cycle-show-pager')) ? true : false;
 	
 	/******************************************************************************************/
 	/************************* DO NOT CHANGE ANYTHING AFTER THIS LINE *************************/
@@ -31,7 +31,14 @@
 	//THE MAIN FUNCTION
 	function start_slideshow() { ?>
 		
-		<?php global $use_with_hook, $hook_name, $gallery_field_name, $image_size_name;	?>
+		<?php global	$use_with_hook, 
+						$hook_name,
+						$gallery_field_name,
+						$image_size_name,
+						$animation,
+						$timeout,
+						$show_pager;	
+		?>
 		
 		<?php if(get_field($gallery_field_name)): ?>
 			<div class="home-slider">
@@ -39,10 +46,12 @@
 			<?php if(count($images) > 1): ?>
 				<div 
 					class="cycle-slideshow"
-					data-cycle-fx=scrollHorz
-					data-cycle-timeout=0
+					data-cycle-fx=<?php echo $animation; ?>
+					data-cycle-timeout=<?php echo $timeout; ?>
+					<?php if($show_pager): ?>
 					data-cycle-prev="#prev"
 					data-cycle-next="#next"
+					<?php endif; ?>
 				>
 			<?php endif; ?>
 			
@@ -57,10 +66,12 @@
 			
 			<?php if(count($images) > 1): ?>
 				</div>
-				<div class="pager">
-				    <a href=# id="prev"><span class="icon-arrow-left"></span></a> 
-				    <a href=# id="next"><span class="icon-arrow-right"></span></a>
-				</div>
+				<?php if($show_pager): ?>
+					<div class="pager">
+					    <a href=# id="prev"><span class="icon-arrow-left"></span></a> 
+					    <a href=# id="next"><span class="icon-arrow-right"></span></a>
+					</div>
+				<?php endif; ?>
 			<?php endif; ?>
 			</div>
 		<?php endif; ?>
