@@ -59,6 +59,13 @@
 					<label for="cycle-show-pager">Sollen die Pager angezeigt werden? Beachte, dass wenn kein Pager aktiv ist die Slideshow dann zumindest keinen Timeout von 0 hat.</label>
 				</td>
 			</tr>
+			<tr valign="top">
+				<th scope="row">Pause beim Hovern</th>
+				<td>
+					<input type="checkbox" value="true" <?php if ( get_option('cycle-pause')) echo 'checked="checked"'; ?> name="cycle-pause" />
+					<label for="cycle-pause">Soll die Slideshow anhalten, sobald mit der Maus über sie gehovert wird?</label>
+				</td>
+			</tr>
 		</table>
 		<?php submit_button(); ?>
 	</form>
