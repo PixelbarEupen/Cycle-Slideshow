@@ -1,5 +1,13 @@
 ### Changelog for Cycle-Slideshow Plugin
 
+#### 0.1.7 (10/04/2014)
+
+* this update provides backend options:
+* select additional image sizes to display in the slideshow
+* set the cycle animation (by now its fade and scrollHorz)
+* set the cycle timeout between slides
+* enable or disable pager
+
 #### 0.1.6.1 (10/04/2014)
 
 * basic integration of backend options
