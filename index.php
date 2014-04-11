@@ -19,6 +19,7 @@
 	$animation			= (get_option('cycle-animation') == '') ? 'fade' : get_option('cycle-animation');
 	$timeout			= (get_option('cycle-timeout') == '') ? 0 : get_option('cycle-timeout');
 	$show_pager			= (get_option('cycle-show-pager')) ? true : false;
+	$pause_on_hover		= (get_option('cycle-pause')) ? 'true' : 'false';
 	
 	/******************************************************************************************/
 	/************************* DO NOT CHANGE ANYTHING AFTER THIS LINE *************************/
@@ -37,7 +38,8 @@
 						$image_size_name,
 						$animation,
 						$timeout,
-						$show_pager;	
+						$show_pager,
+						$pause_on_hover;	
 		?>
 		
 		<?php if(get_field($gallery_field_name)): ?>
@@ -52,6 +54,7 @@
 					data-cycle-prev="#prev"
 					data-cycle-next="#next"
 					<?php endif; ?>
+					data-cycle-pause-on-hover="<?php echo $pause_on_hover; ?>"
 				>
 			<?php endif; ?>
 			
