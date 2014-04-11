@@ -28,4 +28,5 @@ function register_mysettings() {
 	register_setting( 'cycle-settings', 'cycle-animation' );
 	register_setting( 'cycle-settings', 'cycle-timeout' );
 	register_setting( 'cycle-settings', 'cycle-show-pager');
+	register_setting( 'cycle-settings', 'cycle-pause');
 }
