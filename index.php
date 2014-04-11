@@ -7,6 +7,7 @@
 	Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
 	Version: 0.1.6
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
+	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
 	
 	
@@ -24,6 +25,8 @@
 	
 	include('includes/register.php');
 	include('includes/register-acf.php');
+	include('includes/backend.php');
+	
 	
 	//THE MAIN FUNCTION
 	function start_slideshow() { ?>
