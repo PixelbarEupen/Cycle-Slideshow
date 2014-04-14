@@ -3,6 +3,7 @@
 #### 0.1.7.1 (10/04/2014)
 
 * Minor Update: Fixing iconfonts issues
+* Minor Update: Fixing function names to prevent issues with other plugins.
 
 #### 0.1.7 (10/04/2014)
 
