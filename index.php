@@ -71,8 +71,8 @@
 				</div>
 				<?php if($show_pager): ?>
 					<div class="pager">
-					    <a href=# id="prev"><span class="icon-arrow-left"></span></a> 
-					    <a href=# id="next"><span class="icon-arrow-right"></span></a>
+					    <a href=# id="prev"><span class="cycle-icon-arrow-left"></span></a> 
+					    <a href=# id="next"><span class="cycle-icon-arrow-right"></span></a>
 					</div>
 				<?php endif; ?>
 			<?php endif; ?>
