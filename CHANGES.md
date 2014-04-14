@@ -1,6 +1,6 @@
 ### Changelog for Cycle-Slideshow Plugin
 
-#### 0.1.7.12 (10/04/2014)
+#### 0.1.7.12 (14/04/2014)
 
 * Minor Update: Fixing iconfonts issues
 * Minor Update: Fixing function names to prevent issues with other plugins.
