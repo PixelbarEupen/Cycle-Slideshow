@@ -65,18 +65,7 @@
 						'options' => array (
 							'position' => 'acf_after_title',
 							'layout' => 'default',
-							'hide_on_screen' => array (
-								0 => 'custom_fields',
-								1 => 'discussion',
-								2 => 'comments',
-								3 => 'slug',
-								4 => 'author',
-								5 => 'format',
-								6 => 'featured_image',
-								7 => 'categories',
-								8 => 'tags',
-								9 => 'send-trackbacks',
-							),
+							'hide_on_screen' => array (),
 						),
 						'menu_order' => 0,
 					));
