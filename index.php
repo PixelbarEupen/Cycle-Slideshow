@@ -5,7 +5,7 @@
 	Author: Adrian Lambertz
 	Description: Wordpress Cycle Slideshow Plugin based on the popular Wordpress Plugin "Advanced Custom Field". Needs the ACF-Addon "Gallery Field". This plugin just provides the function. You have to output it by yourself!
 	Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
-	Version: 0.1.7.13
+	Version: 0.1.7.14
 	GitHub Plugin URI: https://github.com/PixelbarEupen/Cycle-Slideshow
 	GitHub Access Token: 6ca583973da0e33ee1a6c90c3e4920e6143369ca
 	*/
@@ -63,7 +63,7 @@
 					src="<?php echo $image['sizes'][$image_size_name]; ?>" 
 					width="<?php echo $image['sizes'][$image_size_name.'-width']; ?>" 
 					height="<?php echo $image['sizes'][$image_size_name.'-height']; ?>" 
-					alt="Suite 36 - Smart Lodging" 
+					<?php if($image['alt'] != ''): ?>alt="<?php echo $image['alt']; ?>"<?php endif; ?> 
 				/>
 			<?php endforeach; ?>
 			
