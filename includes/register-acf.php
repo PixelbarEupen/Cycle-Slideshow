@@ -31,7 +31,7 @@
 				{
 					register_field_group(array (
 						'id' => 'acf_startseite',
-						'title' => 'Startseite',
+						'title' => apply_filters( 'cycle_plugin_backend_name', 'Startseite'),
 						'fields' => array (
 							array (
 								'key' => 'field_5342b82819f01',
@@ -65,7 +65,17 @@
 						'options' => array (
 							'position' => 'acf_after_title',
 							'layout' => 'default',
-							'hide_on_screen' => array (),
+							'hide_on_screen' => array (
+								0 => 'custom_fields',
+								1 => 'discussion',
+								2 => 'comments',
+								3 => 'slug',
+								4 => 'author',
+								5 => 'format',
+								7 => 'categories',
+								8 => 'tags',
+								9 => 'send-trackbacks',
+							),
 						),
 						'menu_order' => 0,
 					));
